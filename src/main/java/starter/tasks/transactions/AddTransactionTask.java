@@ -9,14 +9,9 @@ import starter.models.TransactionModel;
 import starter.ui.transaction.TransactionPage;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
-public class TransactionTask {
-    private final TransactionModel data;
-    public TransactionTask(TransactionModel data) {
-        this.data = data;
-    }
-
+public class AddTransactionTask {
     public static Performable transaction(TransactionModel data) {
-        return Task.where(
+        return Task.where("{0} adds a new transaction",
                 WaitUntil.the(TransactionPage.NEW_TRANSACTION_BUTTON, isVisible()).forNoMoreThan(5).seconds(),
                 Click.on(TransactionPage.NEW_TRANSACTION_BUTTON),
                 Enter.theValue(data.getDate()).into(TransactionPage.DATE_INPUT),

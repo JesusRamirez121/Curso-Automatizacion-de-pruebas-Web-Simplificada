@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+    <button id="test-btn">Test Button</button>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            console.log('jQuery cargado');
+            $('#test-btn').click(function() {
+                alert('¡Botón funciona!');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-package starter.ui;
+package starter.ui.registration;
 
 import net.serenitybdd.screenplay.targets.Target;
 
@@ -13,22 +13,12 @@ public class RegistrationUI  {
             Target.the("Input age").locatedBy("//input[@id='age']");
     public static final Target COUNTRY_INPUT =
             Target.the("Select country").locatedBy("//select[@id='country']");
-    public static final Target SEX_MALE_RADIO =
-            Target.the("Radio button sex male").locatedBy("//input[@id='sex-m']");
-    public static final Target SEX_FEMALE_RADIO =
-            Target.the("Radio button sex female").locatedBy("//input[@id='sex-f']");
+    public static final Target SEX_INPUT =
+            Target.the("Select sex").locatedBy("//input[@value='{0}']");
     public static final Target EMAIL_INPUT =
             Target.the("Input email").locatedBy("//input[@id='email']");
-    public static final Target DAY_MON_RADIO =
-            Target.the("Radio button day Monday").locatedBy("//input[@id='monday']");
-    public static final Target DAY_TUE_RADIO =
-            Target.the("Radio button day Tuesday").locatedBy("//input[@id='tuesday']");
-    public static final Target DAY_WED_RADIO =
-            Target.the("Radio button day Wednesday").locatedBy("//input[@id='wednesday']");
-    public static final Target DAY_THU_RADIO =
-            Target.the("Radio button day Thursday").locatedBy("//input[@id='thursday']");
-    public static final Target DAY_FRI_RADIO =
-            Target.the("Radio button day Friday").locatedBy("//input[@id='friday']");
+    public static final Target DAY_RADIO =
+            Target.the("Radio button day Monday").locatedBy("//input[@value='{0}']");
     public static final Target PICTURE_FILE_INPUT =
             Target.the("Input picture file").locatedBy("//input[@id='picture']");
     public static final Target SAVE_BTN =
